@@ -1,0 +1,192 @@
+<!--🥞Pancakes Kawaii Restaurant-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <style>  
+                body {
+                font-family: 'Fredoka', cursive, sans-serif;
+                background-color: #2d1b2f;
+                color: #3e1f47;
+                margin: 0;
+                padding: 0;
+                }   
+
+                header {
+                background-color: #fce7f3;
+                text-align: center;
+                padding: 20px;
+                border-bottom: 4px solid #d48fb0;
+                border-radius: 0 0 20px 20px;
+                }   
+
+                header img {
+                border-radius: 20px;
+                max-width: 200px;
+                margin-bottom: 10px;
+                }
+
+                nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin-top: 10px;
+                }
+
+                nav ul li {
+                display: inline;
+                margin: 0 15px;
+                }   
+
+                h2 {
+                color: #ffffff;
+                text-align: center;
+                font-size: 1.8em;
+                }
+
+                #menu-section {
+                background-color: #fef3f9;
+                
+                padding: 20px;
+                border-radius: 20px;
+                max-width: 600px;
+                margin: 20px auto;
+                }
+
+                #menu-section article {
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+                background-color: #fff0f5;
+                border-radius: 15px;
+                padding: 10px;
+                box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+                }
+
+
+                #menu-section article img {
+                    width: 100px;
+                    border-radius: 10px;
+                    margin-right: 15px;
+                }
+
+                #menu-section h3 {
+                    margin: 0;
+                    color: #7a3163;
+                }
+
+                #menu-section p {
+                    font-style: italic;
+                    margin: 5px 0 0 0;
+                    color: #4a2c45;
+                }
+
+                form {
+                    background-color: #fff0f5;
+                    padding: 20px;
+                    border-radius: 15px;
+                    max-width: 600px;
+                    margin: 20px auto;
+                    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+                }
+
+                label {
+                    color: #4a2c45;
+                }
+
+                input[type="submit"] {
+                    background-color: #f9b3dd;
+                    font-family: 'Fredoka', cursive, sans-serif;
+                    border: none;
+                    padding: 10px 20px;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+
+                input[type="submit"]:hover {
+                    background-color: #f48cb3;
+                }
+
+                footer {
+                    text-align: center;
+                    color: #fce7f3;
+                    padding: 10px;
+                    margin-top: 40px;
+                }
+            </style>
+            <title>🥞Maple & Mochi</title>
+        </head>
+        <header>
+            <img id="header-img" width="300" src="https://i.pinimg.com/736x/b4/e9/33/b4e9335dcfbb97a4a0da9d463063ecf9.jpg" alt="Maple & Mochi logo" >
+            <h1>🥞Maple & Mochi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu-section">Menu</a></li>
+                    <li><a href="#orderform-section">Order Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Menu</h2>
+            <!--Menu Section-->
+            <section id="menu-section" style="display: flex; justify-content: center; gap: 20px; background-color: #fef3f9; padding: 20px; border-radius: 20px;">
+                <article style="background-color: #ffffff; border-radius: 15px; padding: 10px; width: 200px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                    <img width="120" src="https://i.pinimg.com/736x/08/07/d9/0807d9199c56e9f599f4491e78327bd7.jpg" style="display:block; margin: 0 auto;"/>
+                    <h3>🥞Classic Pancakes</h3>
+                    <p><i>Homemade classic pancakes<br><br>Price: $4</i></p>
+                </article>
+                <article style="background-color: #ffffff; border-radius: 15px; padding: 10px; width: 200px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                    <img width="120" src="https://i.pinimg.com/736x/22/9d/f8/229df8d3b00a1aae5c167a784a3c2f47.jpg" style="display:block; margin: 0 auto;"/>
+                    <h3>🧇Sweet Waffles</h3>
+                    <p><i>Four sweet and tasty waffles<br><br>Price: $4</i></p>
+                </article>
+                <article style="background-color: #ffffff; border-radius: 15px; padding: 10px; width: 200px; text-align: center; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                    <img width="120" src="https://i.pinimg.com/736x/c7/70/93/c7709385c88ae7f5b957caa26925fada.jpg" style="display:block; margin: 0 auto;"/>
+                    <h3>🥤MilkShake</h3>
+                    <p><i>Try our delicious chocolate Milkshake<br><br>Price: $2 </i></p>
+                </article>
+            </section>
+            <!--Order Form Section-->
+            <section id="orderform-section">
+                <h2>Place Your Order</h2>
+                <form>
+                    <!--Classic Pancakes-->
+                    <label for="classicpancakes">🥞Classic Pancakes:</label>
+                    <input type="number" id="classicpancakes" min="0" value="0"><br>
+                    <input type="checkbox" id="extra-syrup" value="extra-syrup">
+                    <label for="extra-syrup">Extra Syrup</label><br>
+                    <input type="checkbox" id="whipped-cream" value="whipped-cream">
+                    <label for="whipped-cream">Whipped Cream</label><br>
+                    <input type="checkbox" id="fruit-topping" value="fruit-topping">
+                    <label for="fruit-topping">Fruit Topping</label><br><br>
+                    <!--Sweet Waffles-->
+                    <label for="sweetwaffles">🧇Sweet Waffles:</label>
+                    <input type="number" id="sweetwaffles" min="0" value="0"><br>
+                    <input type="checkbox" id="extra-syrup" value="extra-syrup">
+                    <label for="extra-syrup">Extra Syrup</label><br>
+                    <input type="checkbox" id="whipped-cream" value="whipped-cream">
+                    <label for="whipped-cream">Whipped Cream</label><br>
+                    <input type="checkbox" id="fruit-topping" value="fruit-topping">
+                    <label for="fruit-topping">Fruit Topping</label><br><br>
+                    <!--Milkshake-->
+                    <label for="MilkShake">🥤MilkShake:</label>
+                    <input type="number" id="MilkShake" min="0" value="0"><br>
+                    <input type="radio" name="option">
+                    <label for="whole">Whole Milk</label><br>
+                    <input type="radio" name="option">
+                    <label for="lactose-free">Lactose Free MilkShake</label><br>
+                    <input type="radio" name="option">
+                    <label for="almond">Almond Milk</label><br><br>
+                    <!--Special Requests-->
+                    <label for="requests">Special Requests:</label><br>
+                    <textarea id="requests" placeholder="Let us know"></textarea><br><br>
+                    <input type="submit" value="Submit"/>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by ReikoAkier</p>
+        </footer>
+    </body>
+</html>
